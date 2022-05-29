@@ -1,0 +1,20 @@
+Github API Event Sources (explore)
+Event Sources watch for new data from services like GitHub, Slack, Airtable, RSS and more. 
+When a source finds a new event, it emits it, triggering any linked workflows.
+
+Custom Events - Build your own event source using one or multiple events (code)
+New Branch - Triggered when a new branch is created. (code)
+New Commit - Triggered when a new commit comment is created. (code)
+New Commit Comment - Triggered when a new comment on a commit is created. (code)
+New Issue - Triggered when a new issue is created. (code)
+New Label - Triggered when a new label is created. (code)
+New Mention - Triggers when your username is mentioned in a Commit, Comment, Issue or Pull 
+Request. (code)
+New Milestone - Triggered when a new milestone is created. (code)
+New Pull Request - Triggered when a new pull request is created. (code)
+You can also consume events emitted by sources using Pipedream's REST API or a private, 
+real-time SSE stream.
+
+When a pre-built source doesn't exist for your use case, you can build your own. Here is 
+the simplest event source: it exposes an HTTP endpoint you can send any request to, and 
+prints the contents of the request when invoked:
